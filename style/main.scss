@@ -1,0 +1,145 @@
+$righteous: 'Righteous', cursive;
+$sarala: 'Sarala', sans-serif;
+$main-color: #fff2e7;
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* GERAL */
+
+:root {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  padding-inline: 28rem;
+}
+
+body {
+  background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+  font-size: 1.6rem;
+  font-family: $sarala;
+  color: $main-color;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.8rem;
+  border-bottom: 1px solid $main-color;
+
+  nav ul {
+    display: flex;
+    gap: 3rem;
+
+    a {
+      font-weight: 400;
+      color: $main-color;
+    }
+  }
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3.2rem;
+
+      h1 {
+        font-family: $righteous;
+        font-size: 6.4rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+
+      button {
+        background-color: $main-color;
+        border-radius: 2rem;
+        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        padding: 1.2rem;
+        font-size: 2rem;
+        font-family: $sarala;
+        color: #2f2325;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+    }
+
+    img {
+      width: 38rem;
+    }
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block: 6.4rem;
+
+    h3 {
+      font-size: 2rem;
+      font-family: $righteous;
+      font-weight: 400;
+      margin-bottom: 3.4rem;
+
+      &::before {
+        content: '';
+        margin-bottom: 6.4rem;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $main-color;
+      }
+    }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3.2rem;
+  border-top: 1px solid $main-color;
+}
